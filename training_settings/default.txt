@@ -1,0 +1,20 @@
+Action space type: Discrete
+
+No.     Steering angle (°)      Speed (m/s)
+0       -30.0                   0.50
+1       -15.0                   1.50
+2	    0.0	                    2.00
+3	    15.0	                1.50
+4	    30.0	                0.50
+
+Reinforcement learning algorithm: PPO
+
+Hyperparameter                          Value
+Gradient descent batch size	            64
+Entropy	                                0.01
+Discount factor	                        0.95
+Loss type	                            huber
+Learning rate	                        0.0003
+Number of experience episodes between 
+each policy-updating iteration	        40
+Number of epochs	                    10

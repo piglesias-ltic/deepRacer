@@ -1,0 +1,2 @@
+Reward function: follow_center.py
+training settings: default.txt
