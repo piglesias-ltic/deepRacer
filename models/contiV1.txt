@@ -1,0 +1,2 @@
+Reward function: center_with_speed.py
+training settings: sac_default.txt

@@ -1,0 +1,31 @@
+{
+  "action_space": {
+    "steering_angle": {
+      "high": 45.0,
+      "low": -45.0
+    },
+    "speed": {
+      "high": 5.0,
+      "low": 0.2
+    }
+  },
+  "sensor": [
+    "FRONT_FACING_CAMERA"
+  ],
+  "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+  "version": "5",
+  "training_algorithm": "sac",
+  "action_space_type": "continuous"
+}
+
+{
+  "batch_size": 64,
+  "discount_factor": 0.999,
+  "e_greedy_value": 0.05,
+  "epsilon_steps": 10000,
+  "exploration_type": "additive_noise",
+  "loss_type": "mean squared error",
+  "lr": 0.0003,
+  "num_episodes_between_training": 1,
+  "sac_alpha": 0.2
+}

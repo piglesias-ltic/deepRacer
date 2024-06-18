@@ -1,20 +1,42 @@
-Action space type: Discrete
+{
+    "action_space": [
+        {
+            "steering_angle": -30,
+            "speed": 0.5
+        },
+        {
+            "steering_angle": -15,
+            "speed": 1.5
+        },
+        {
+            "steering_angle": 0,
+            "speed": 2.0
+        },
+        {
+            "steering_angle": 15,
+            "speed": 1.5
+        },
+        {
+            "steering_angle": 30,
+            "speed": 0.5
+        }
+    ],
+    "sensor": ["FRONT_FACING_CAMERA"],
+    "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+    "training_algorithm": "clipped_ppo", 
+    "action_space_type": "discrete",
+    "version": "5"
+}
 
-No.     Steering angle (°)      Speed (m/s)
-0       -30.0                   0.50
-1       -15.0                   1.50
-2	    0.0	                    2.00
-3	    15.0	                1.50
-4	    30.0	                0.50
-
-Reinforcement learning algorithm: PPO
-
-Hyperparameter                          Value
-Gradient descent batch size	            64
-Entropy	                                0.01
-Discount factor	                        0.95
-Loss type	                            huber
-Learning rate	                        0.0003
-Number of experience episodes between 
-each policy-updating iteration	        40
-Number of epochs	                    10
+{
+  "batch_size": 64,
+  "beta_entropy": 0.01,
+  "discount_factor": 0.95,
+  "e_greedy_value": 0.05,
+  "epsilon_steps": 10000,
+  "exploration_type": "categorical",
+  "loss_type": "huber",
+  "lr": 0.0003,
+  "num_episodes_between_training": 40,
+  "num_epochs": 10
+}
