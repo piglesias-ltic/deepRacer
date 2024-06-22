@@ -1,0 +1,3 @@
+Base model: spreadV1
+Reward function: discrete_center_with_speedV51.py
+training settings: discrete_spreadV51.txt

@@ -1,2 +1,2 @@
-Reward function: follow_center.py
+Reward function: discrete_center_with_speed.py
 training settings: discrete_spread.txt
