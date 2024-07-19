@@ -1,8 +1,8 @@
 def reward_function(params):    
     WORST_REWARD = 1e-4
     BAD_REWARD = 1e-3
-    CENTER_REWARD = 0.5
-    SPEED_REWARD = 0.25
+    CENTER_REWARD = 0.4
+    SPEED_REWARD = 0.1
     STEP_REWARD = 1 - CENTER_REWARD - SPEED_REWARD
     STEP_WINDOW_REWARD = 15
     TARGET_STEPS = 300
@@ -15,9 +15,9 @@ def reward_function(params):
 
     # tuples of (steering angle, speed range, percent of speed reward)
     STEERING_ANGLE_SPEED_TO_COEF = [
-        (20.0, 0.75, 0.2), (20.0, 1.25, 0.4), (20.0, 5.0, 0.4),
+        (20.0, 0.75, 0.1), (20.0, 1.25, 0.45), (20.0, 5.0, 0.45),
         (5.0, 1.75, 0.1), (5.0, 2.75, 0.4), (5.0, 5.0, 0.5),
-        (0.0, 2.5, 0.1), (0.0, 3.5, 0.2), (0.0, 5.0, 0.7),
+        (0.0, 2.5, 0.01), (0.0, 3.5, 0.6), (0.0, 5.0, 0.9),
     ]
 
     if params['is_crashed'] or params['is_offtrack'] or params['is_reversed']: #is clockwise

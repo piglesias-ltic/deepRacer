@@ -2,7 +2,7 @@ def reward_function(params):
     WORST_REWARD = 1e-4
     BAD_REWARD = 1e-3
     CENTER_REWARD = 0.5
-    SPEED_REWARD = 0.25
+    SPEED_REWARD = 0.15
     STEP_REWARD = 1 - CENTER_REWARD - SPEED_REWARD
     STEP_WINDOW_REWARD = 15
     TARGET_STEPS = 300
